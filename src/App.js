@@ -1,13 +1,17 @@
 
+import { useState } from 'react';
 import './App.css';
 import Body from './Components/Body';
+import Modal from './Components/Modal';
 import NavBar from './Components/Navbar';
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
-    <div className="App">
-     <NavBar className='nvi'/>
-     <Body/>
+    <div className="App" >
+     <NavBar className='nvi' isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+     {isModalOpen&&<Modal setIsModalOpen={setIsModalOpen}/>}
+     <Body />
     </div>
   );
 }
