@@ -1,0 +1,84 @@
+import React from "react";
+import "./Footer.css";
+
+const Footer = () => {
+  return (
+    <>
+      <footer className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="footer-col">
+              <h4>company</h4>
+              <ul>
+                <li>
+                  <div className="anc">about us</div>
+                </li>
+                <li>
+                  <div className="anc">our services</div>
+                </li>
+                <li>
+                  <div className="anc">privacy policy</div>
+                </li>
+                <li>
+                  <div className="anc">affiliate program</div>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li>
+                  <div className="anc">FAQ</div>
+                </li>
+                
+                <li>
+                  <div className="anc">Booking</div>
+                </li>
+                
+                <li>
+                  <div className="anc">payment options</div>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Hotel Location</h4>
+              <ul>
+                <li>
+                  <div className="anc">Hotel Near Me </div>
+                </li>
+                <li>
+                  <div className="anc">Hotel in Agra</div>
+                </li>
+                <li>
+                  <div className="anc">Hotel in Goa</div>
+                </li>
+                <li>
+                  <div className="anc">Hotel in Puri</div>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>follow us</h4>
+              <div className="social-links">
+                <div className="anc1">
+                  <i className="fab fa-facebook-f"></i>
+                </div>
+                <div className="anc1">
+                  <i className="fab fa-twitter"></i>
+                </div>
+                <div className="anc1">
+                  <i className="fab fa-instagram"></i>
+                </div>
+                <div className="anc1">
+                  <i className="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+};
+
+export default Footer;
