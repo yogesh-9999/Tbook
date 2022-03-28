@@ -2,7 +2,12 @@ import React from "react";
 import "./style3.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar as fasFaStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar as farFaStar } from '@fortawesome/free-regular-svg-icons'
+import { faStarHalfAlt} from "@fortawesome/free-solid-svg-icons";
+library.add(fasFaStar, farFaStar, faStarHalfAlt)
 export const Crausal = () => {
   const arr1 = [
     {
@@ -69,8 +74,23 @@ export const Crausal = () => {
         {arr1.map((image) => {
           return (
             <div className="carousel-img-container">
-              <img src={image.src} key={image.id} />
+              <div className="cont"><img src={image.src} key={image.id} /></div>
               <h4>Place info</h4>
+              {/* <span class="heading">User Rating</span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span> */}
+              <div className="checked">
+                <FontAwesomeIcon icon={fasFaStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={fasFaStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={fasFaStar}></FontAwesomeIcon>
+                <FontAwesomeIcon icon={fasFaStar}></FontAwesomeIcon>
+                <div className="unchecked">
+                 <FontAwesomeIcon icon={fasFaStar}></FontAwesomeIcon>
+                </div>
+              </div>
             </div>
           );
         })}
