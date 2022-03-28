@@ -107,3 +107,6 @@ background-color: blue;
   transform: translate(-50%,-50%);
 }
 
+.filter{
+  z-index: 2;
+}
