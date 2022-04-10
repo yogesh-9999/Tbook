@@ -1,16 +1,24 @@
 
-.nav2{
-    position: absolute;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
+  }
+.nav1{
+    z-index: 100;
+    display: flex;
+    position: fixed;
+}
+.nav2{
+    display: flex;
 }
 
 .para {
-    width: 27rem;;
-    height: 6rem;
+    width: 30%;
+    height: 17%;
     clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-    border-radius: .4rem;
     position: fixed;
-    left: -62px;
     background-color: white;
     transition: all 800ms ease
   }
@@ -85,7 +93,7 @@ li a:hover{
     
     align-items: center;
     display: flex;
-    margin-top: 31rem;
+    margin-top: 33rem;
     position: absolute;
     z-index:-1;
     
@@ -144,9 +152,13 @@ li a:hover{
     position: absolute;
     margin-top: -1.85rem;
     margin-left: 3.7rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 .head_text{
     color: white;
+    z-index: -1;
     position: absolute;
     margin-top: 13rem;
     margin-left: 7rem;
@@ -159,9 +171,10 @@ li a:hover{
     width: 10rem;
     height: 3rem;
 }
+
 @media screen and (max-width: 1024px) {
     .para {
-        width: 27rem;;
+        width: 24rem;;
     height: 6rem;
         clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
       }
@@ -173,7 +186,8 @@ li a:hover{
        
       }
       .para1 {
-        width: 29rem;;
+        width: 24rem;;
+        clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
       }
       .para1_2 {
         width: 30.5rem;
@@ -191,6 +205,12 @@ li a:hover{
         display: flex;
        
     }
+    .logo{
+        margin-left: 6rem;
+    }
+    .logo1{
+        margin-left: 6rem;
+    }
     
     .logo_text{
         margin-left: .4rem;
@@ -200,12 +220,12 @@ li a:hover{
         height: 52vh;
     }
     .search{
-        margin-top: 36rem;
+        margin-top: 24rem;
         margin-left: 5rem;
     }
     .search input{
         border: none;
-        margin-left: 1.8rem;
+        margin-left: .9rem;
         width: 6.4rem;
     }
     

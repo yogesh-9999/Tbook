@@ -6,12 +6,13 @@ import { BiBed } from 'react-icons/bi';
 import {BsCalendar2Date} from 'react-icons/bs'
 import {GoPerson} from 'react-icons/go'
 import Typewriter from "typewriter-effect";
+import { Link } from "react-router-dom";
 
 const Nav2 = () => {
     
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isScrolled, setisScrolled] = useState(false);
     window.onscroll = () => {
-        setIsScrolled(window.pageYOffset < 50 ? false : true);
+        setisScrolled(window.pageYOffset < 50 ? false : true);
         return () => (window.onscroll = null);
       };
       
@@ -20,15 +21,37 @@ const Nav2 = () => {
     <div>
     <img className='img_bg' src={bg} alt=''/>
     
-    {!isScrolled?<nav className='nav1'>
-    <div className='para'>
-        <div className='logo_tab'>
-            <img  className='logo' src={logo} alt=''/>
-            <div className='logo_text'>
+    <nav className={!isScrolled?'nav1':'nav2'}>
+    <div className={!isScrolled?'para':'para1'}>
+        <div className={!isScrolled?'logo_tab':'logo_all'} >
+            <img className={!isScrolled?'logo':'logo1'}  src={logo} alt=''/>
+            <div className={!isScrolled?'logo_text':'logo_text1'} >
                 tmn's Roommate
             </div>
         </div>
     </div>
+    
+    <div className={!isScrolled?'para_2':'para1_2'} >
+    <ul className="nav_bar">    
+    <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/">Rooms</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+        
+        <li>
+          <a href="/">Contact Us</a>
+        </li>
+        <li>
+          <a href="/">Book Now</a>
+        </li>  
+    </ul>
+    </div>
+    </nav> 
     <div className='head_text'>
     <h1 >Welcome to happiness.</h1>
     <Typewriter className='typing'
@@ -42,57 +65,6 @@ const Nav2 = () => {
        />
     <button type="button" className="btn login_btn btn-primary">Login / Register</button>
     </div>
-    <div className='para_2'>
-    <ul className="nav_bar">    
-    <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">Rooms</a>
-        </li>
-        <li>
-          <a href="/">About</a>
-        </li>
-        
-        <li>
-          <a href="/">Contact Us</a>
-        </li>
-        <li>
-          <a href="/">Book Now</a>
-        </li>  
-    </ul>
-    </div>
-    </nav> :<nav className='nav2'>
-    <div className='para1'>
-        
-    <div className='logo_all'>
-            <img  className='logo1' src={logo} alt='Logo'/>
-            <div className='logo_text1'>
-                tmn's Roommate
-            </div>
-        </div>
-        </div>
-    <div className='para1_2'>
-    <ul className="nav_bar">    
-    <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">Rooms</a>
-        </li>
-        <li>
-          <a href="/">About</a>
-        </li>
-        
-        <li>
-          <a href="/">Contact Us</a>
-        </li>
-        <li>
-          <a href="/">Book Now</a>
-        </li>  
-    </ul>
-    </div>
-    </nav>}
     <section className='container'>
         <div className='search' >
         
@@ -111,12 +83,16 @@ const Nav2 = () => {
         </label>
         <div>
         <div className='line'/>
-        <button type="button" className="btn search_btn btn-dark">Search</button>
+        
+        <Link className="btn search_btn btn-dark" to="/search">
+        Search
+                </Link>
         </div>
         </div>
         
     </section>
     </div>
+    
     </>
   )
 }

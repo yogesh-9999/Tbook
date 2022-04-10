@@ -1,0 +1,138 @@
+.cr2 {
+    display: block;
+    /* border: 4px solid black; */
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 120px;
+    /* margin-right: 2rem;
+    margin-left: 2rem; */
+    top: 1754px;
+    z-index: -1;
+}
+.image-grid1 li,.image-grid2 li{
+    list-style: none;
+    margin: 0 1rem;
+    list-style-type: none important;
+}
+  .image-grid1,.image-grid2{
+      display: flex;
+      margin:2rem;
+      height: 100%;
+      padding:0 1rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+    
+  }
+  .image-grid1 li , .image-grid2 li{
+    overflow: hidden;
+    position: relative;
+  }
+  .image-grid1 img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+  .image-grid2 img{
+    overflow: hidden;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+  .image-grid1 li:hover img{
+    opacity: 0.8;
+      transform: scale(1.5);
+      
+  }
+  .image-grid2 li:hover img{
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+
+  .Headline{
+      margin:0.5rem;
+      margin-left:4rem;
+      /* font-family: Courier, monospace; */
+  }
+  .image-grid1 h3{
+    /* font-family: 'Courier New', Courier, monospace; */
+    z-index: 11;
+    position:absolute;
+    display: flex;
+    /* display: absolute; */
+    top:18rem;
+    left: 2rem;
+  }
+  .image-grid2 h4{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    z-index: 11;
+    position:absolute;
+    display: flex;
+    /* display: absolute; */
+    top:12rem;
+    left: 1rem;
+  }
+  @media screen and (max-width: 824px){
+    .image-grid1,.image-grid2{
+        display: flex;
+        margin:2rem;
+        height: 100%;
+        padding:0 1rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+      
+    }
+    .image-grid1 li,.image-grid2 li{
+        list-style: none;
+        margin: 0 1rem;
+        list-style-type: none important;
+    }
+    
+      .image-grid1 li , .image-grid2 li{
+        overflow: hidden;
+        position: relative;
+      }
+      .image-grid1 img{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;;
+        transition: 0.5s all ease-in-out;
+      }
+      .image-grid2 img{
+        overflow: hidden;
+        width: 100%;
+        transition: 0.5s all ease-in-out;
+      }
+      .image-grid1 li:hover img{
+        opacity: 0.8;
+          transform: scale(1.5);
+          
+      }
+      .image-grid2 li:hover img{
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+    
+      .Headline{
+          margin:1rem;
+          margin-left:5rem;
+          /* font-family: Courier, monospace; */
+      }
+      .image-grid1 h3{
+        /* font-family: 'Courier New', Courier, monospace; */
+        z-index: 11;
+        position:absolute;
+        display: flex;
+        /* display: absolute; */
+        top:16rem;
+        left: 2rem;
+      }
+      .image-grid2 h4{
+        /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+        z-index: 11;
+        position:absolute;
+        display: flex;
+        /* display: absolute; */
+        top:10rem;
+        left: 1rem;
+      }
+}

@@ -1,6 +1,9 @@
 import React from "react";
 import "./Footer.css";
-
+import { FcGoogle } from "react-icons/fc";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
@@ -30,11 +33,11 @@ const Footer = () => {
                 <li>
                   <div className="anc">FAQ</div>
                 </li>
-                
+
                 <li>
                   <div className="anc">Booking</div>
                 </li>
-                
+
                 <li>
                   <div className="anc">payment options</div>
                 </li>
@@ -61,16 +64,16 @@ const Footer = () => {
               <h4>follow us</h4>
               <div className="social-links">
                 <div className="anc1">
-                  <i className="fab fa-facebook-f"></i>
+                  <FcGoogle />
                 </div>
                 <div className="anc1">
-                  <i className="fab fa-twitter"></i>
+                  <BsFacebook />
                 </div>
                 <div className="anc1">
-                  <i className="fab fa-instagram"></i>
+                  <BsInstagram />
                 </div>
                 <div className="anc1">
-                  <i className="fab fa-linkedin-in"></i>
+                  <BsTwitter/>
                 </div>
               </div>
             </div>

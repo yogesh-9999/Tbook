@@ -6,7 +6,7 @@ import { BiLogIn } from "react-icons/bi";
 import { BsCalendar2Date } from "react-icons/bs";
 import { GiPerson } from "react-icons/gi";
 
-const searchPage = () => {
+const SearchPage = () => {
   return (
     <>
       <section className="position__top">
@@ -15,7 +15,7 @@ const searchPage = () => {
         </div>
         <span>RoomMates</span>
       </section>
-      <section className="container">
+      <section className="container_search">
         <div className="update__info">
           <div className="icon">
             <BiLogIn style={{ marginRight: "1rem" }} />
@@ -32,7 +32,7 @@ const searchPage = () => {
                 name="fname"
               />
             </div>
-            <div className="line" />
+            <div className="line_search" />
             <BsCalendar2Date style={{ marginRight: "1rem" }} />
             <div>
               <div for="fname" style={{ fontSize: "small", fontWeight: "500" }}>
@@ -359,4 +359,4 @@ const searchPage = () => {
   );
 };
 
-export default searchPage;
+export default SearchPage;
