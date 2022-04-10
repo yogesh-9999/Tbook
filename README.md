@@ -1,6 +1,24 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Commands:
+npm i
+npm install react-multi-carousel --save
+npm install react-icons --save
+npm start
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Available Scripts
 
